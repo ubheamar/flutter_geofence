@@ -4,4 +4,5 @@ class GeofenceConstant {
   static const String GEOFENCE_INIT_METHOD = 'initializeGeofence';
   static const String GEOFENCE_REGISTER_METHOD = 'registerGeofence';
   static const String GEOFENCE_UNREGISTER_METHOD = 'unregisterGeofence';
+  static const String GEOFENCE_ENABLED_CHECK_METHOD = 'checkGeofenceStatus';
 }

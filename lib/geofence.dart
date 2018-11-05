@@ -34,6 +34,9 @@ class Geofence {
     return await _channel.invokeMethod(
         GeofenceConstant.GEOFENCE_REGISTER_METHOD, args);
   }
+  static Future<bool> isGeofenceEnabled() async{
+    return await _channel.invokeMethod(GeofenceConstant.GEOFENCE_ENABLED_CHECK_METHOD);
+  }
 
   static Future<bool> unRegisterGeofence() async {
     return await _channel

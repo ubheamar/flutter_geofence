@@ -9,6 +9,7 @@ class GeofenceConstant {
         val GEOFENCE_INIT_METHOD : String = "initializeGeofence"
         val GEOFENCE_REGISTER_METHOD : String = "registerGeofence"
         val GEOFENCE_UNREGISTER_METHOD : String = "unregisterGeofence"
+        val GEOFENCE_ENABLED_CHECK_METHOD : String = "checkGeofenceStatus"
         val REQUIRED_PERMISSIONS = arrayListOf(Manifest.permission.ACCESS_FINE_LOCATION,
                                             Manifest.permission.ACCESS_COARSE_LOCATION,
                                             Manifest.permission.WAKE_LOCK)

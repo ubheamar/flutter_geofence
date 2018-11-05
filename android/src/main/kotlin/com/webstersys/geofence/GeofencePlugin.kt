@@ -79,6 +79,9 @@ class GeofencePlugin(context: Context, activity: Activity?): MethodCallHandler {
       locationManager.stopMonitoringJob()
       result.success(true)
     }
+    else if(call.method.equals(GeofenceConstant.GEOFENCE_ENABLED_CHECK_METHOD)){
+      result.success(geofencingStore.isMonitoringShouldStart())
+    }
     else {
       result.notImplemented()
     }
