@@ -23,24 +23,25 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-   // initPlatformState();
+    // initPlatformState();
     initGeofence();
   }
+
   static void callback(Location l, GeofenceEvent e) async {
     print('Location $l Event: $e');
     final SendPort send =
-    IsolateNameServer.lookupPortByName('geofencing_send_port');
+        IsolateNameServer.lookupPortByName('geofencing_send_port');
     send?.send(e.toString());
-
   }
-  Future<void> initGeofence() async{
-    try{
-      bool isInitialized =  await Geofence.initialize();
+
+  Future<void> initGeofence() async {
+    try {
+      bool isInitialized = await Geofence.initialize();
       print("Geofence plugin initialzed : $isInitialized");
-      var region = GeofenceRegion(Location(18.4825,73.7973),3000.00);
-      bool geofenceAdded = await Geofence.registerGeofence(region,callback);
+      var region = GeofenceRegion(Location(18.4825, 73.7973), 3000.00);
+      bool geofenceAdded = await Geofence.registerGeofence(region, callback);
       //await Geofence.unRegisterGeofence();
-    }catch(e){
+    } catch (e) {
       print(e);
     }
   }

@@ -1,8 +1,6 @@
 const int _kEnterEvent = 1;
 const int _kExitEvent = 2;
-enum GeofenceEvent {
-  ENTER, EXIT
-}
+enum GeofenceEvent { ENTER, EXIT }
 
 // Internal.
 int geofenceEventToInt(GeofenceEvent e) {

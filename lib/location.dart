@@ -1,5 +1,3 @@
-
-
 class Location {
   final double latitude;
   final double longitude;

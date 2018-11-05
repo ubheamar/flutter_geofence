@@ -1,8 +1,8 @@
 name: geofence
-description: A new Flutter plugin.
-version: 0.0.1
-author:
-homepage:
+description: Flutter Geofence Plugin Background Job Support
+version: 0.0.2
+author: Amar Ubhe<ubheamar@gmail.com>
+homepage: https://github.com/ubheamar/flutter_geofence
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
