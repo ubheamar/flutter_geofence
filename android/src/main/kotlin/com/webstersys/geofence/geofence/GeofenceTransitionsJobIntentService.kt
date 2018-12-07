@@ -89,7 +89,7 @@ class GeofenceTransitionsJobIntentService : HeadlessJobService(GeofenceConstant.
 
             Log.i(TAG, geofenceTransitionDetails)
             // Send notification and log the transition details.
-            sendNotification(geofenceTransitionDetails)
+            //sendNotification(geofenceTransitionDetails)
             //Dart callback
             val location = geofencingEvent.triggeringLocation
             val locationList = listOf(location.latitude, location.longitude)

@@ -20,6 +20,7 @@ abstract class HeadlessJobService(val backgroundChannelName: String) : JobIntent
     companion object {
         val sServiceStarted = AtomicBoolean(false)
         var sBackgroundFlutterView: FlutterNativeView? = null
+        @JvmStatic
         lateinit var sPluginRegistrantCallback: PluginRegistry.PluginRegistrantCallback
 
 

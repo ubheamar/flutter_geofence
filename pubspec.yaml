@@ -1,6 +1,6 @@
 name: geofence
-description: Flutter Geofence Plugin Background Job Support For Regsiter Geofence & If Mobile enters for exit geofence flutter code get triggered
-version: 1.0.0
+description: Flutter Geofence Plugin Background Job Support For Register Geofence & If Mobile enters for exit geofence flutter code get triggered
+version: 1.0.3
 author: Amar Ubhe<ubheamar@gmail.com>
 homepage: https://github.com/ubheamar/flutter_geofence
 
